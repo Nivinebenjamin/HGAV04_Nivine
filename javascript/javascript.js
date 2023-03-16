@@ -12,6 +12,10 @@ let mijnGeojsonLaag = L.geoJSON().addTo(leafletmap);
 let woonplaatsen = ['amsterdam', 'leeuwarden', 'groningen']
 let woonplaatsNaam = woonplaatsen[1];
 
+
+
+//met de free service een id ophalen 
+
 fetch(`https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?q=${woonplaatsNaam}&rows=10`)
 .then(response => response.json())
 .then(data => {
