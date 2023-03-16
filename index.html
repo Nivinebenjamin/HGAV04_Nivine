@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!---Taal-->
+<html lang="en">
+<head>
+<title>GuruTravel</title>
+<!---Metadata-->
+<meta name="description" content="Most expensive cities in the world">
+  <meta name="keywords" content="cities, New york, Sigapore, expensive">
+  <meta name="author" content="Nivine Benjamin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!---Leaflet-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+<!---openstreet map-->
+<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
+
+<!---CSS link-->
+<link rel="stylesheet" href="css/websitecss.css">
+
+<!---google fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" >
+</head>
+ 
+<body>
+<!---header-->
+   <div class="header"> 
+    <nav>
+        <img src="img/ GuruTravel-logo.png" class="logo" alt="Logo" >
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+        </ul>
+
+    </nav>
+<div class="text-box">
+    <h1>Most expensive cities in the world to live in</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. </p>
+        <a href="#">Discover here</a>
+</div>
+
+<div class="header-image">
+    <img src="img/city2.png">
+</div>
+
+</div>
+
+<!---end header-->
+
+<!---intro-->
+ 
+<section class="intro">
+    
+        <div class="intro-text">
+            <h1>Why live in a city?</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+
+    <div class="intro-image">
+        <img src="img/houses.png"    width="800"  height="400" >
+    </div>
+
+
+</section>
+
+ 
+<section class="map">
+    
+    <div class="map-text">
+        <h1>Top 5 most expensive cities in the world</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+</div>
+
+<div id="leaflet-map">
+
+</div>
+
+
+</section>
+<!---end intro-->
+
+
+<!---nyc text-->
+<section class="nyc">
+    
+    <div class="nyc-text">
+        <h1>New York city</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+
+
+</div>
+<div id="openlayers-map">
+
+</div>
+</section>
+
+<!---nyc text end-->
+
+
+<!---singapore text-->
+
+<section class="singapore">
+    
+    <div class="singapore-text">
+        <h1>Singapore</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat. 
+           <br> Duis aute irure dolor in reprehenderit in voluptate <br>velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+
+
+</div>
+</section>
+<!---singapore text end-->
+
+<!--Tel aviv text-->
+<section class="telaviv">
+    
+    <div class="telaviv-text">
+        <h1>Tel Aviv</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat. 
+           <br> Duis aute irure dolor in reprehenderit in voluptate <br>velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+
+
+</div>
+</section>
+<!--Tel aviv text end-->
+
+<!---footer-->
+<div class="footer">
+    <div class="row"> 
+        <div class="column">
+            <img src="img/ GuruTravel-logo-black.png" class="logo" alt="Logo"> 
+            <p>This website is made by Nivine Benjamin.</p>
+        </div>
+        <div class="column">
+            <h3>lorem Ipsum</h3>
+            <p>Hightower lane, Hightower</p>
+            <p>Hightower,XD 2354, Lorem</p>
+            <p class="email-id">loremipsum@hotmail.com</p>
+            <h4>+31-1234567891</h4>
+        </div>
+    
+        <div class="column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Parana</a></li>
+                <li><a href="">Nile</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div class="column"></div>
+        <h3>Newsletter</h3>
+        <form>
+            <Input type="email" placeholder="Enter your email " required></Input>
+        </form>
+    </div>
+    </div>
+
+    <!--- end footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+   
+
+
+
+
+
+
+
+
+    
+
+<script src="javascript/javascript.js"> </script>
+</body>
+</html>

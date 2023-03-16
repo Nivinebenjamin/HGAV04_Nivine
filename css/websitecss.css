@@ -1,0 +1,370 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.header{
+width: 100%;
+height: 100vh;
+padding:0,10%;
+background:#ebe8fc ;
+}
+
+.header img{
+    margin-left: 100px;
+    
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#7371fc ;
+    font-family: lexend;
+}
+
+nav ul li a ::before{
+    content: '';
+    width: 100%;
+    height: 85px;
+    background: #588157;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+
+}
+
+.text-box{
+    margin-top: 130px;
+    max-width: 600px;
+
+
+}
+
+.text-box h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color:#a594f9 ;
+    font-family:lexend ;
+}
+
+.text-box p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color: #000; 
+    font-family:'Manrope', sans-serif; ; 
+}
+
+.text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background:#7371fc ;
+    padding:10px 30px ;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 10px;
+    font-family: lexend;
+}
+
+.header-image{
+ 
+  position: absolute;
+  top: 0 ;
+  right: 8%;
+  left: 15%;
+ 
+
+
+}
+
+.header-image img{
+    display: block;
+    padding-top: 70px;
+    width: 1000px;
+  height:700px;
+  padding-left: 300px;
+   }
+
+/* end header style */
+
+/*intro*/
+
+.intro{
+margin-left: 100px;
+margin-top: 50px;
+}
+
+.intro-text{
+    margin-top: 130px;
+    max-width: 600px;
+}
+
+.intro-text h1{
+    font-family: lexend;
+    font-size: 25px;
+    color: #7371fc;
+    
+}
+
+.intro-text p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+.intro-image{
+  margin-left: 550px;
+  margin-top: -170px;
+}
+/* end intro style */
+
+/*map text */
+.map{
+margin-left: 100px;
+margin-top: 100px;
+margin-right: 100px;
+}
+
+.map-text{
+    text-align: center;
+}
+
+.map-text h1{
+    font-family: lexend;
+    font-size: 25px;
+    color: #a594f9 ;
+
+}
+
+.map-text p{
+    font-family: 'Manrope', sans-serif;;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+#leaflet-map { height: 700px; }
+
+
+/* map text end */
+
+
+/* NYC text */
+
+.nyc{
+    background-color: #ebe8fc;
+    width: 100%;
+    height: 70vh;
+    padding:0,10%;
+    display: grid ;
+    grid-template-columns: 500px 500px;
+    margin-top: 200px;
+    }
+    
+    .nyc-text{
+        max-width: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+        padding-top: 30px;
+    }
+    
+    .nyc-text h1{
+        font-family: lexend;
+        font-size: 25px;
+        color: #7371fc;
+        
+    }
+    
+    .nyc-text p{
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+    }
+
+    #openlayers-map {
+        width: 1000px;
+        height: 300px;
+        display: grid ;
+        grid-template-columns: 500px 500px;
+        margin-left: 300px;
+        margin-top: 100px;
+        margin-right: ;
+        padding-right: 400px;
+      }
+
+/* NYC text end */
+
+/* Singapore text */
+
+.singapore{
+    width: 100%;
+    height: 70vh;
+    padding:0,10%;
+    display: grid ;
+    grid-template-columns: 500px 500px;
+    }
+    
+    .singapore-text{
+        max-width: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+        padding-top: 30px;
+    }
+    
+    .singapore-text h1{
+        font-family: lexend;
+        font-size: 25px;
+        color: #7371fc;
+        
+    }
+    
+    .singapore-text p{
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+    }
+/* Singapore text end */ 
+
+/*Tel Aviv text*/
+.telaviv{
+    width: 100%;
+    height: 70vh;
+    padding:0,10%;
+    display: grid ;
+    grid-template-columns: 500px 500px;
+    background-color: #ebe8fc;
+
+}
+    
+    .telaviv-text{
+        max-width: 600px;
+        margin-left: 100px;
+        margin-top: 100px;
+        padding-top: 30px;
+    }
+    
+    .telaviv-text h1{
+        font-family: lexend;
+        font-size: 25px;
+        color: #7371fc;
+        
+    }
+    
+    .telaviv-text p{
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+    }
+
+    /*Tel Aviv*/
+
+/*footer */
+
+ .footer{
+    width: 100%;
+    position: absolute ;
+    bottom: -4000px;
+    background: linear-gradient(to right, #a594f9, #7371fc);
+    color: #E5DACA;
+    padding: 100px 0 30px;
+    border-top-right-radius: 125px;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: "Lexend";
+    margin-top: auto;
+
+
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.column{
+    flex-basis: 25%;
+    padding: 10px;
+
+}
+
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+    
+}
+
+.column h3{
+    width: fit-content;
+    margin: 40px; 
+    position: relative;
+  }
+
+
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #E5DACA;
+    margin: 20px 0;
+  
+  }
+
+  .column ul li{
+      list-style: none;
+      margin-bottom: 12px;
+
+  }
+
+
+.column ul li a{
+  text-decoration: none;
+  color: #E5DACA;
+}
+
+
+.nav{
+  padding: 30px 3%;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul{
+  flex: 1;
+  text-align: center;
+
+}
+
+.nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav ul li a{
+  color:#fff ;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: lexend ;
+}
+/* end footer */
