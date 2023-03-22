@@ -231,6 +231,18 @@ margin-right: 100px;
         font-family: 'Manrope', sans-serif;
         font-size: 15px;
     }
+
+    #maplibre{
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        display: grid ;
+        grid-template-columns: 500px 500px;
+        margin-left: 700px;
+        margin-top: 100px;
+        padding-right: 400px;
+
+    }
 /* Singapore text end */ 
 
 /*Tel Aviv text*/
@@ -263,6 +275,18 @@ margin-right: 100px;
         font-size: 15px;
     }
 
+
+    #esrikaart{
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        display: grid ;
+        grid-template-columns: 500px 500px;
+        margin-left: 700px;
+        margin-top: 100px;
+        padding-right: 400px;
+    }
+    
 /*Tel Aviv*/
 
 /*Hong Kong text*/
@@ -331,12 +355,45 @@ margin-right: 100px;
 
     /*Los angeles*/
 
+
+/*dataviz*/
+
+.dataviz{
+    width: 100%;
+    height: 70vh;
+    padding:0,10%;
+    display: grid ;
+    grid-template-columns: 500px 500px;
+    
+  
+}
+.datavisualisatie h2{
+    font-family: lexend;
+   
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-top: 30px;
+    color: #7371fc;
+
+}
+
+.datavis{
+    font-family: lexend;
+    
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-top: 30px; 
+    color: #7371fc;
+}
+
 /*footer */
 
  .footer{
     width: 100%;
     position: absolute ;
-    bottom: -5000px;
+    bottom: -7500px;
     background: linear-gradient(to right, #a594f9, #7371fc);
     color: #E5DACA;
     padding: 100px 0 30px;

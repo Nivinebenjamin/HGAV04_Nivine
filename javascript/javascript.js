@@ -7,42 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(leafletmap);
 
-let mijnGeojsonLaag = L.geoJSON().addTo(leafletmap);
 
-let woonplaatsen = ['amsterdam', 'leeuwarden', 'groningen']
-let woonplaatsNaam = woonplaatsen[1];
-
-
-
-//met de free service een id ophalen 
-
-fetch(`https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?q=${woonplaatsNaam}&rows=10`)
-.then(response => response.json())
-.then(data => {
-    //pak het id nr van het eersye object wat terugkomt 
-    console.log(data.response.docs[0].id)
-    let id = data.response.docs[0].id
-
-    //vraag de data op en zet op de kaart 
-    tekenDataOpKaart(id)
-})
-//Aan de hand van een ID de geometrie ophalen en op de kaart zetten. En vliegen naar die locatie 
-
-function tekenDataOpKaart(woonplaatsId){
-    const mijnEersteAPIrequest= `https://api.pdok.nl/bzk/locatieserver/search/v3_1/lookup?id=${woonplaatsId}&wt=json&fl=*`
-
-    fetch(mijnEersteAPIrequest,{})
-    .then(response => response.json())
-    .then (data => { 
-        console.log(data)
-        console.log(data.response.docs[0].geometrie_ll)
-    let = geojsonFeature = Terraformer.wktToGeoJSON(data.response.docs[0].geometrie_ll)
-    mijnGeojsonLaag.addData(geojsonFeature);
-    let centerCoordinates = Terraformer.wktToGeoJSON (data.response.docs[0].centroide_ll)
-    console.log(centerCoordinates)
-    leafletmap.flyTo(centerCoordinates.coordinates.reverse())
-    })
-}
 
 
 //end leaflet kaart//
@@ -60,5 +25,42 @@ const openlayersMap= new ol.Map({
         zoom:8
     })
 });
+
+//Maplibre map//
+
+var map = new maplibregl.Map({
+    container: 'maplibre', // container id
+    style: 'https://demotiles.maplibre.org/style.json', // style URL
+    center: [0, 0], // starting position [lng, lat]
+    zoom: 1 // starting zoom
+});
+
+
+//Esrikaart map//
+
+require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig, Map, MapView) {
+
+	esriConfig.apiKey = "AAPK4f674d77278f461086d34ac836aed8adI-yxUqFsbbZEEFjDBOENZ1JQHeTa_shSS0Qbib50Y183s7zvzUtM3-W9SdnVQokX";
+
+	const esriKaart = new Map({
+		basemap: "arcgis-topographic" // Basemap layer service
+	});
+
+	const view = new MapView({
+		map: esriKaart,
+		center: [5.2213, 51.7160], // Longitude, latitude
+		zoom: 8, // Zoom level
+		container: "esriKaart" // Div element
+	})
+});
+
+
+//Mapbox kaart//
+
+
+
+//Google API//
+
+
 
 
