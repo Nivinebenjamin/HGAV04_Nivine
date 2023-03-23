@@ -222,10 +222,11 @@ crossorigin=""/>
             <h3>Links</h3>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Parana</a></li>
-                <li><a href="">Nile</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">New York</a></li>
+                <li><a href="">Singapore</a></li>
+                <li><a href="">Tel Aviv</a></li>
+                <li><a href="">Hong Kong</a></li>
+                <li><a href="">Los Angeles</a></li>
             </ul>
         </div>
     
@@ -286,6 +287,14 @@ crossorigin=""/>
     
 <script src="https://js.arcgis.com/4.26/"></script>
 <script src="javascript/javascript.js"> </script>
+<script> //map initilizer 
+    var map = L.map('map', {center: [5.4491995,-32.6766071],zoom: 2}); 
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map)
+    ; 
+    var geoJsonLayer = L.geoJson(leaflet).addTo(leafletmap);
+    
+     </script>
+
 </body>
 
 

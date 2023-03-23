@@ -7,6 +7,91 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(leafletmap);
 
+L.tileLayer.wms('http://localhost:8080/geoserver/ows?', {
+    'layers':'Nivine_HGAV03:gemeente_2021_v1',
+    'styles': 'polygon',
+    'srs': 'EPSG:28992',
+    'format':'image/png',
+    'opacity':0.5
+}) .addTo(leafletmap);
+
+
+var leaflet= {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "New York"
+        },
+        "geometry": {
+          "coordinates": [
+            -73.99550882510259,
+            40.71410093339094
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Los Angeles "
+        },
+        "geometry": {
+          "coordinates": [
+            -118.2652448310516,
+            34.158474505207224
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name ": "Tel Aviv"
+        },
+        "geometry": {
+          "coordinates": [
+            34.781594691098576,
+            32.09008355706702
+          ],
+          "type": "Point"
+        },
+        "id": 2
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name ": "Singapore "
+        },
+        "geometry": {
+          "coordinates": [
+            103.82208525152237,
+            1.3539093324894225
+          ],
+          "type": "Point"
+        },
+        "id": 3
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hong Kong "
+        },
+        "geometry": {
+          "coordinates": [
+            114.18158056008139,
+            22.274909951245647
+          ],
+          "type": "Point"
+        },
+        "id": 4
+      }
+    ]
+  };
+
 
 
 
