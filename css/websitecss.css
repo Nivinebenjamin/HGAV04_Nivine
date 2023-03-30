@@ -168,25 +168,25 @@ margin-right: 100px;
     height: 70vh;
     padding:0,10%;
     display: grid ;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     margin-top: 200px;
     }
     
-    .nyc-text{
+    .text{
         max-width: 600px;
         margin-left: 100px;
         margin-top: 100px;
         padding-top: 30px;
     }
     
-    .nyc-text h1{
+    .text h1{
         font-family: lexend;
         font-size: 25px;
         color: #7371fc;
         
     }
     
-    .nyc-text p{
+    .text p{
         font-family: 'Manrope', sans-serif;
         font-size: 15px;
     }
@@ -195,7 +195,7 @@ margin-right: 100px;
         width: 1000px;
         height: 300px;
         display: grid ;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 50% 50%;
         margin-left: 300px;
         margin-top: 100px;
         padding-right: 400px;
@@ -213,24 +213,6 @@ margin-right: 100px;
     grid-template-columns: 500px 500px;
     }
     
-    .singapore-text{
-        max-width: 600px;
-        margin-left: 100px;
-        margin-top: 100px;
-        padding-top: 30px;
-    }
-    
-    .singapore-text h1{
-        font-family: lexend;
-        font-size: 25px;
-        color: #7371fc;
-        
-    }
-    
-    .singapore-text p{
-        font-family: 'Manrope', sans-serif;
-        font-size: 15px;
-    }
 
     #maplibre{
         position: absolute;
@@ -256,32 +238,14 @@ margin-right: 100px;
 
 }
     
-    .telaviv-text{
-        max-width: 600px;
-        margin-left: 100px;
-        margin-top: 100px;
-        padding-top: 30px;
-    }
-    
-    .telaviv-text h1{
-        font-family: lexend;
-        font-size: 25px;
-        color: #7371fc;
-        
-    }
-    
-    .telaviv-text p{
-        font-family: 'Manrope', sans-serif;
-        font-size: 15px;
-    }
 
 
-    #esrikaart{
+    #kaartesri{
         position: absolute;
         width: 500px;
         height: 400px;
         display: grid ;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 50% 50%;
         margin-left: 700px;
         margin-top: 100px;
         padding-right: 400px;
@@ -307,17 +271,7 @@ margin-right: 100px;
         padding-top: 30px;
     }
     
-    .hongkong-text h1{
-        font-family: lexend;
-        font-size: 25px;
-        color: #7371fc;
-        
-    }
-    
-    .hongkong-text p{
-        font-family: 'Manrope', sans-serif;
-        font-size: 15px;
-    }
+
 
  /*Hong Kong*/
 
@@ -334,24 +288,7 @@ margin-right: 100px;
 
 }
     
-    .losangeles-text{
-        max-width: 600px;
-        margin-left: 100px;
-        margin-top: 100px;
-        padding-top: 30px;
-    }
-    
-    .losangeles-text h1{
-        font-family: lexend;
-        font-size: 25px;
-        color: #7371fc;
-        
-    }
-    
-    .losangeles-text p{
-        font-family: 'Manrope', sans-serif;
-        font-size: 15px;
-    }
+
 
 /*Los angeles*/
 
