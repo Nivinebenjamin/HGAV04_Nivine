@@ -1,6 +1,6 @@
 
 //leaflet kaart//
-const leafletmap = L.map('leaflet-map').setView([51.505, -0.09], 13);
+const leafletmap = L.map('leaflet-map').setView([35.2744853,-4.5274128], 2);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -18,8 +18,8 @@ var geojsonFeature={
     },
     "geometry": {
       "coordinates": [
-        103.851959,
-        1.290270
+        -73.979681,
+        40.6974881
         
       ],
       "type": "Point"
@@ -88,18 +88,8 @@ L.geoJSON(geojsonFeature).addTo(leafletmap);
 //end leaflet kaart//
 
 //openlayers kaart//
-const openlayersMap= new ol.Map({
-    target:'openlayers-map',
-    layers:[
-        new ol.layer.Tile({
-            source: new ol.source.OSM()
-        })
-    ],
-    view: new ol.View({
-        center: ol.proj.fromLonLat([5.2213, 51.7160]),
-        zoom:8
-    })
-});
+
+
 
 
 //Maplibre map//
@@ -107,7 +97,7 @@ const openlayersMap= new ol.Map({
 var maplibre = new maplibregl.Map({
     container: 'maplibre', // container id
     style: 'https://api.maptiler.com/maps/8718435e-b827-439a-a691-48207121d42b/style.json?key=jF1UM2WUAu2XxUlqe9H9', // style URL
-    center: [103.81779586660787, 1.310148280089848], // starting position [lng, lat]
+    center: [103.8193202, 1.3116497,], // starting position [lng, lat]
     zoom: 14 // starting zoom
 });
 
@@ -152,8 +142,8 @@ require(["esri/config", "esri/WebMap", "esri/views/MapView"], function (esriConf
 	const view = new MapView({
     container: "kaartesri",
 		map: esri,
-		center: [-118.5727117,33.9342533], // Longitude, latitude
-		zoom: 4 // Zoom level
+		center: [ -116.9107961, 35.6693921], // Longitude, latitude
+		zoom: 1 // Zoom level
 		 // Div element
 	});
 });
@@ -217,16 +207,20 @@ circle4.bindPopup("The Cullinan");
 
 
 // adressenkaart
-const adresmap = L.map('adresmap').setView([52.4507725,4.7831266], 1);
+const adresmap = L.map('adresmap').setView([52.4507725,4.7831266], 10);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(adresmap);
 
+var polygon = L.polygon([
+  [51.509, -0.08],
+  [51.503, -0.06],
+  [51.51, -0.047]
+]).addTo(adresmap);
 
-
-
+polygon.bindPopup("Guru travel office");
 
 L.tileLayer.wms('http://localhost:8080/geoserver/ows?', {
     'layers':'Nivine_HGAV03:Zaanstad_gemeentegrens',
@@ -236,5 +230,23 @@ L.tileLayer.wms('http://localhost:8080/geoserver/ows?', {
     'opacity':0.5
 }) 
 .addTo(adresmap);
+
+//openlayers map 
+
+
+const openlayersMap= new ol.Map({
+  target:'openlayersmap',
+  layers:[
+      new ol.layer.Tile({
+          source: new ol.source.OSM()
+      })
+  ],
+  view: new ol.View({
+      center: ol.proj.fromLonLat([-0.118092, 51.509865]),
+      zoom:8
+  })
+});
+
+
 
 // end javascript 
