@@ -16,7 +16,7 @@ crossorigin=""/>
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
 
-<!---openstreet map-->
+<!---openstreet/ openlayers map-->
 <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
 
@@ -58,8 +58,8 @@ crossorigin=""/>
     </nav>
 <div class="text-box">
     <h1>Most expensive cities in the world to live in</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-        labore et dolore magna aliqua. </p>
+    <p>The most important cities in the world are often also the most expensive to live in.<br> 
+        Below, we will discuss the top five most expensive cities to live in. </p>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Discover here</a>
 </div>
 
@@ -77,9 +77,9 @@ crossorigin=""/>
     
         <div class="intro-text">
             <h1>Why live in a city?</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p> Living in a city often has its advantages. For instance, there is good public transport which means you no longer need a car. Additionally, 
+                a lot of different cultures come together, shops and various other things are easy to reach and 
+                there are plenty of job opportunities (Lettings, z.d.).</p>
     </div>
 
     <div class="intro-image">
@@ -94,7 +94,13 @@ crossorigin=""/>
     
     <div class="map-text">
         <h1>Top 5 most expensive cities in the world</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p> By 2022, the most expensive cities in the world are: 
+           <li> 1.	New York </li>
+           <li> 2.	Singapore</li>
+           <li> 3.	Tel-Aviv</li>
+           <li> 4.	Los Angeles</li>
+            <li>5.	Hong Kong </li>
+        </p> 
 </div>
 
 <div id="leaflet-map">
@@ -107,7 +113,7 @@ crossorigin=""/>
 
 
 <!---nyc text-->
-<section class="nyc">
+<section class="cities">
     
     <div class="text">
         <h1>New York </h1>
@@ -118,7 +124,9 @@ crossorigin=""/>
 
 
 </div>
-<div id="openlayers-map">
+<iframe title="NYC median house sale price " aria-label="Stacked Bars" id="datawrapper-chart-Fr8W8" src="https://datawrapper.dwcdn.net/Fr8W8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="403" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
     
 
 </div>
@@ -156,11 +164,27 @@ crossorigin=""/>
 
 </div>
 
-<div id="kaartesri">
+
 
 </div>
 </section>
 <!--Tel aviv text end-->
+
+
+<!--Los angeles text-->
+<section class="losangeles">
+    
+    <div class="text">
+        <h1>Los angeles </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat. 
+           <br> Duis aute irure dolor in reprehenderit in voluptate <br>velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</div>
+
+
+<div id="kaartesri"></div>
+</section>
+<!--Los angeles text end-->
 
 
 <!--Hong Kong text-->
@@ -175,32 +199,44 @@ crossorigin=""/>
 
 
 </div>
+
+<div id="leaflet-hongkong"></div>
+
 </section>
 <!--hong kong text end-->
 
-<!--Los angeles text-->
-<section class="losangeles">
-    
-    <div class="text">
-        <h1>Los angeles </h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat. 
-           <br> Duis aute irure dolor in reprehenderit in voluptate <br>velit esse cillum dolore eu fugiat nulla pariatur.</p>
-</div>
-
-
-</div>
-</section>
-<!--Los angeles text end-->
-
 <div class="dataviz"> 
     <div class="datavisualisatie" > 
-        <h2>The world most populated cities</h2>
+        <h2>Average house prices in the world most expensive cities</h2>
+        <script id="infogram_0_54abc599-0dfd-404f-b2d9-db090f0d93e9" title="World house prices " src="https://e.infogram.com/js/dist/embed.js?n5s" type="text/javascript"></script>
+        <div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"
+        ><a href="https://infogram.com/54abc599-0dfd-404f-b2d9-db090f0d93e9" style="color:#989898!important;text-decoration:none!important;" target="_blank">World house prices </a>
+            <br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+        
     </div>
     <div class="datavis">
         <h2>The world most populated cities</h2>
+        <iframe title="Top 3 most expensive buildings in New York City " aria-label="Locator maps" id="datawrapper-chart-8s9Ub" src="https://datawrapper.dwcdn.net/8s9Ub/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
     </div>
+
+    <div id="openlayers-map">
 </div>
+
+<div class="adres">
+
+<div class="Adres-text">
+    <h2>Are you interested in travelling? </h2>
+    <p>Join us at the GURU-travel office where we can <br> help you plan a trip 
+        and we offer advice for travelling <br>to other countries.</p>
+</div>
+<div id="adresmap"></div>
+<div class="bronnen"></div>
+</div>
+
+
+
+
 
 
 <!---footer-->
@@ -287,13 +323,7 @@ crossorigin=""/>
     
 <script src="https://js.arcgis.com/4.26/"></script>
 <script src="javascript/javascript.js"> </script>
-<script> //map initilizer 
-    var map = L.map('map', {center: [5.4491995,-32.6766071],zoom: 2}); 
-    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map)
-    ; 
-    var geoJsonLayer = L.geoJson(leaflet).addTo(leafletmap);
-    
-     </script>
+
 
 </body>
 

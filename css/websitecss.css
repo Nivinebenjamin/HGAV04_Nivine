@@ -162,7 +162,7 @@ margin-right: 100px;
 
 /* NYC text */
 
-.nyc{
+.cities{
     background-color: #ebe8fc;
     width: 100%;
     height: 70vh;
@@ -210,7 +210,7 @@ margin-right: 100px;
     height: 70vh;
     padding:0,10%;
     display: grid ;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     }
     
 
@@ -219,7 +219,7 @@ margin-right: 100px;
         width: 500px;
         height: 400px;
         display: grid ;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 50% 50%;
         margin-left: 700px;
         margin-top: 100px;
         padding-right: 400px;
@@ -233,16 +233,14 @@ margin-right: 100px;
     height: 70vh;
     padding:0,10%;
     display: grid ;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     background-color: #ebe8fc;
 
 }
     
-
-
-    #kaartesri{
+ #kaartesri{
         position: absolute;
-        width: 500px;
+        width: 100%;
         height: 400px;
         display: grid ;
         grid-template-columns: 50% 50%;
@@ -259,7 +257,7 @@ margin-right: 100px;
     height: 70vh;
     padding:0,10%;
     display: grid ;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     
 
 }
@@ -271,7 +269,14 @@ margin-right: 100px;
         padding-top: 30px;
     }
     
-
+    #leaflet-hongkong { 
+        height: 300px;
+        width: 500px;
+        margin-top: 100px;
+    
+    
+    
+    }
 
  /*Hong Kong*/
 
@@ -282,7 +287,7 @@ margin-right: 100px;
     height: 70vh;
     padding:0,10%;
     display: grid ;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     background-color: #ebe8fc;
 
 
@@ -300,7 +305,7 @@ margin-right: 100px;
     height: 70vh;
     padding:0,10%;
     display: grid ;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 500px 500px 500px;
     
   
 }
@@ -317,8 +322,7 @@ margin-right: 100px;
 
 .datavis{
     font-family: lexend;
-    
-    max-width: 600px;
+     max-width: 600px;
     margin-left: 100px;
     margin-top: 100px;
     padding-top: 30px; 
@@ -326,6 +330,37 @@ margin-right: 100px;
 }
 
 /* end dataviz*/
+
+
+#adresmap { 
+    height: 500px;
+    width: 500px;
+
+
+
+}
+
+.adres{
+    display: grid ;
+    grid-template-columns: 500px 500px;
+    font-family: lexend;
+    font-family: lexend;
+    font-size: 25px;
+    color: #a594f9 ;
+    margin-top: 500px;
+}
+
+.adres h2{
+    margin-left: 100px;
+}
+
+.adres p{
+    margin-left: 100px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: #000 ;
+}
+
 
 /*footer */
 
